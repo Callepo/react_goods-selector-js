@@ -20,7 +20,7 @@ export const App = () => {
 
   return (
     <main className="section container">
-      {selectedGood === null ? (
+      {selectedGood === '' ? (
         <h1 className="title is-flex is-align-items-center">
           No goods selected
         </h1>
@@ -32,7 +32,7 @@ export const App = () => {
             type="button"
             className="delete ml-3"
             onClick={() => {
-              setSelected(0);
+              setSelected('');
             }}
           />
         </h1>
@@ -54,7 +54,7 @@ export const App = () => {
                     type="button"
                     className="button is-info"
                     onClick={() => {
-                      setSelected(null);
+                      setSelected('');
                     }}
                   >
                     -
