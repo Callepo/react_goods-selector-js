@@ -20,7 +20,7 @@ export const App = () => {
 
   return (
     <main className="section container">
-      {selectedGood === 0 ? (
+      {selectedGood === null ? (
         <h1 className="title is-flex is-align-items-center">
           No goods selected
         </h1>
@@ -54,7 +54,7 @@ export const App = () => {
                     type="button"
                     className="button is-info"
                     onClick={() => {
-                      setSelected(0);
+                      setSelected(null);
                     }}
                   >
                     -
